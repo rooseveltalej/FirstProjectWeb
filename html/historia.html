@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../public/Escudo_de_Barcelona.svg" type="image/x-icon" />
+<title>Historia y Cultura - Barcelona</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    // Configuración de Tailwind CSS
+tailwind.config = {
+    theme: {
+    extend: {
+        colors: {
+        primary: '#004D98',   // Azul FC Barcelona
+        grana: '#A50044',     // Rojo/granate
+        amarillo: '#FDB913',  // Amarillo brillante
+    },
+    fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
+        title: ['Bebas Neue', 'cursive'],
+        }
+    }
+    }
+}
+</script>  
+</head>
+
+<script>
+        function openModal(id) {
+        document.getElementById(id).classList.remove('hidden');
+        document.getElementById(id).classList.add('flex');
+        }
+    
+        function closeModal(id) {
+        document.getElementById(id).classList.remove('flex');
+        document.getElementById(id).classList.add('hidden');
+        }
+</script>
+
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+
+        <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-primary text-white shadow-md mb-10">   <!-- Navbar fijo en la parte superior, con ancho completo, fondo azul y sombra -->
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">     <!-- Contenedor centrado, padding, y flexbox horizontal para logo y menú -->
+        <a href="../index.html" class="text-2xl font-bold tracking-wide">Barcelona</a>            <!-- Tamaño grande de texto, negrita, letras un poco más separadas -->
+    
+    
+        <!-- Burger Button -->
+        <button id="menu-toggle" class="md:hidden focus:outline-none">                <!-- Ícono hamburguesa para móviles -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"     
+                viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">     <!-- Oculto en pantallas medianas en adelante -->
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+    
+        <!-- Menu Items -->
+        <ul id="menu" class="hidden md:flex space-x-6 text-sm font-medium">           <!-- Menú visible en pantallas medianas en adelante -->
+                                                                                        <!-- Oculto por defecto, se muestra como flex a partir de "md" (768px) -->
+                                                                                        <!-- Espaciado horizontal entre ítems -->
+            <li><a href="../index.html" class="hover:text-amarillo">Inicio</a></li>
+            <li><a href="historia.html" class="hover:text-amarillo">Historia y Cultura</a></li>
+            <li><a href="atracciones.html" class="hover:text-amarillo">Atracciones</a></li>
+            <li><a href="gastronomia.html" class="hover:text-amarillo">Gastronomía</a></li>
+            <li><a href="como-llegar.html" class="hover:text-amarillo">Cómo Llegar</a></li>
+        </ul>
+        </nav>
+    
+        <!-- Mobile Menu (Este solo se muestra si se hace click en el icono de hamburguesa) -->
+        <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-primary text-sm font-medium">    <!-- Oculto en pantallas medianas o mayores -->
+        <a href="../index.html" class="block py-2 hover:text-amarillo">Inicio</a>
+        <a href="historia.html" class="block py-2 hover:text-amarillo">Historia y Cultura</a>
+        <a href="atracciones.html" class="block py-2 hover:text-amarillo">Atracciones</a>
+        <a href="gastronomia.html" class="block py-2 hover:text-amarillo">Gastronomía</a>
+        <a href="como-llegar.html" class="block py-2 hover:text-amarillo">Cómo Llegar</a>
+        </div>
+    </header>
+
+    <!-- Encabezado principal -->
+    <section class="bg-primary text-white py-6 text-center pt-20">
+    <h1 class="text-4xl font-bold">Historia y Cultura de Barcelona</h1>
+    <p class="text-lg mt-2 italic">Explora la riqueza histórica y las tradiciones vivas de la ciudad</p>
+    </section>
+
+    <!-- Sección de Historia -->
+    <section class="max-w-6xl mx-auto py-16 px-6 flex flex-col md:flex-row items-center gap-10">
+        <div class="md:w-1/2">
+        <h2 class="text-2xl font-bold mb-4 underline">Historia de la ciudad</h2>
+        <p class="mb-4">
+            Barcelona, fundada por los romanos como <strong>Barcino</strong>, ha sido testigo de siglos de historia...
+        </p>
+        <p class="mb-4">
+            La historia de <strong>Barcelona</strong> se remonta a la <em>época neolítica</em>, 
+            pero su origen como ciudad se sitúa a finales del siglo I a.C., cuando fue fundada como colonia 
+            romana bajo el nombre de <strong>Barcino</strong>. Aún se conservan restos de su muralla en el actual 
+            casco antiguo.
+        </p>
+        <p class="mb-4">
+        Durante más de dos siglos, estuvo bajo dominio musulmán, hasta que la <strong>reconquista cristiana</strong> 
+        la incorporó al Imperio Carolingio. En la Edad Media, se consolidó como un centro político y económico del 
+        Mediterráneo occidental. El actual <em>Barrio Gótico</em> es testimonio del esplendor vivido entre los siglos XIII y XV.
+        </p>
+        <p class="mb-4">
+        Tras un período de decadencia, en <strong>1714</strong> Barcelona cayó ante las tropas borbónicas, 
+        perdiendo así los <em>derechos y privilegios catalanes</em>. No sería hasta el siglo XIX, con la 
+        <strong>Revolución Industrial</strong> y la <em>Renaixença</em>, cuando la ciudad revivió cultural y económicamente.
+        </p>
+        <p class="mb-4">
+        En el siglo XX, el <strong>Barrio del Eixample</strong> marcó una transformación urbanística clave, 
+        albergando joyas del <em>modernismo catalán</em> como la <strong>Casa Batlló</strong>, 
+        <strong>La Pedrera</strong> y la <strong>Sagrada Família</strong> del célebre arquitecto <em>Antoni Gaudí</em>.
+        </p>
+        <p class="mb-4">
+        Pese a las restricciones sufridas durante la Guerra Civil y la dictadura, la recuperación de la democracia en 
+        <strong>1978</strong> trajo consigo el renacer de la identidad catalana. Los <strong>Juegos Olímpicos de 1992</strong> 
+        y el <em>Fòrum de les Cultures</em> de 2004 modernizaron y revitalizaron la ciudad, proyectándola al siglo XXI.
+        </p>
+        <blockquote class="border-l-4 border-primary pl-4 italic text-gray-600 mt-4">
+            “Barcelona primero fue Barcino, una pequeña ciudad de fundación romana que con el paso de los siglos se convirtió en una 
+            importante capital medieval” – Fuente: barcelonaturisme.com
+        </blockquote>
+        <p class="mt-4">
+            Más sobre la historia en 
+            <a href="https://www.barcelonaturisme.com/wv3/es/page/43/historia-de-barcelona.html" target="_blank" class="text-amarillo underline hover:text-grana">
+                barcelonaturisme.com
+            </a>
+        </p>
+        </div>
+    
+        <div class="md:w-1/2">
+        <img src="../assets/images/historia/barcelona_history_image.jpg" alt="Historia de Barcelona" class="rounded-lg shadow-md">
+        </div>
+    </section>
+
+    <!-- Sección de Costumbres y Cultura -->
+    <section class="max-w-6xl mx-auto py-16 px-6 flex flex-col md:flex-row-reverse items-center gap-10">
+        <div class="md:w-1/2">
+            <h2 class="text-2xl font-bold mb-4 underline">Costumbres y Cultura</h2>
+            <p class="mb-4">
+                ​Barcelona es una ciudad rica en tradiciones que reflejan su identidad cultural única. 
+                Una de las costumbres más emblemáticas es la Sardana, un baile tradicional catalán que se ejecuta en círculo, 
+                con los participantes tomados de las manos y siguiendo el ritmo de la música interpretada por una cobla. 
+            </p>
+
+            <p class="mb-4">
+                Otra manifestación cultural destacada son los Castellers, torres humanas que simbolizan la fuerza, 
+                equilibrio y cohesión social de la comunidad catalana; esta práctica ha sido reconocida por la UNESCO como 
+                Patrimonio Cultural Inmaterial de la Humanidad.
+            </p>
+            <p class="mb-4">
+                Durante la Semana Santa, es tradicional disfrutar de la Mona de Pascua, un pastel adornado con figuras de chocolate 
+                que los padrinos regalan a sus ahijados, representando la celebración y el compartir en familia.
+            </p>
+            <p class="mb-4">
+                Además, la práctica de tomar el vermut antes del almuerzo sigue siendo una actividad social muy arraigada, donde amigos y familiares 
+                se reúnen en bodegas y bares para disfrutar de esta bebida acompañada de tapas. 
+            </p>
+            <p class="mb-4">
+                Estas costumbres, entre otras, conforman el rico tapiz cultural que define a Barcelona y su gente.​
+            </p>
+            <p class="mt-4">
+                Más sobre la costumbres en 
+                <a href="https://www.barcelonasiempre.com/es/costumbres" target="_blank" class="text-amarillo underline hover:text-grana">
+                    barcelonasiempre.com
+                </a>
+            </p>
+        </div>
+        
+        <div class="md:w-1/2">
+            <img src="../assets/images/historia/costumbres_barcelona.jpg" alt="Costumbres en Barcelona" class="rounded-lg shadow-md">
+        </div>
+        </section>
+
+    <!-- Sección de Festividades -->
+    <section class="max-w-6xl mx-auto py-10 px-6">
+        <h2 class="text-2xl font-bold mb-6 underline text-center">Festividades Populares</h2>
+
+        <!-- Grid de festividades -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Ficha de festividad -->
+        <div onclick="openModal('modal-santjordi')" class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="../assets/images/historia/sant-jordi.jpg" alt="Sant Jordi" class="w-full h-48 object-cover">
+            <div class="p-4">
+            <h3 class="text-xl font-bold text-primary">Sant Jordi</h3>
+            <p class="text-sm mt-2">Una celebración del amor y los libros, el 23 de abril.</p>
+            </div>
+        </div>
+
+        
+        <div onclick="openModal('modal-gracia')" class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="../assets/images/historia/festa-major.jpg" alt="Festa Major" class="w-full h-48 object-cover">
+            <div class="p-4">
+            <h3 class="text-xl font-bold text-primary">Festa Major de Gràcia</h3>
+            <p class="text-sm mt-2">Agosto: calles decoradas, música y cultura en uno de los barrios más icónicos.</p>
+            </div>
+        </div>
+
+                <!-- Modal: Sant Jordi -->
+        <div id="modal-santjordi" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+            <div class="bg-white rounded-lg max-w-lg p-6 relative">
+            <button onclick="closeModal('modal-santjordi')" class="absolute top-2 right-4 text-xl font-bold text-gray-600">&times;</button>
+            <h3 class="text-2xl font-bold text-primary mb-4">Sant Jordi</h3>
+            <p class="text-gray-700">
+                El 23 de abril, Sant Jordi convierte las calles de Barcelona en un festival de amor y literatura. Las personas se regalan libros y rosas, y las librerías y floristas llenan las plazas.
+            </p>
+            </div>
+        </div>
+        
+        <!-- Modal: Festa Major de Gràcia -->
+        <div id="modal-gracia" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+            <div class="bg-white rounded-lg max-w-lg p-6 relative">
+            <button onclick="closeModal('modal-gracia')" class="absolute top-2 right-4 text-xl font-bold text-gray-600">&times;</button>
+            <h3 class="text-2xl font-bold text-primary mb-4">Festa Major de Gràcia</h3>
+            <p class="text-gray-700">
+                Celebrada en agosto, esta fiesta transforma las calles del barrio de Gràcia con decoraciones creativas, conciertos y actividades culturales para todas las edades.
+            </p>
+            </div>
+        </div>
+
+
+        
+
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-4 mt-10">
+        <p>&copy; 2025 Roosevelt Pérez - Barcelona</p>
+    </footer>
+
+</body>
+
+<script src="../js/index.js"></script>
+</html>

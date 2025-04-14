@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="icon" href="../public/Escudo_de_Barcelona.svg" type="image/x-icon" />
+<title>Gastronomía - Barcelona</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+    theme: {
+    extend: {
+        colors: {
+        primary: '#004D98',
+        grana: '#A50044',
+        amarillo: '#FDB913',
+        }
+    }
+    }
+}
+</script>
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+<!-- Navbar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-primary text-white shadow-md">
+<nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="../index.html" class="text-2xl font-bold tracking-wide">Barcelona</a>
+    <button id="menu-toggle" class="md:hidden focus:outline-none">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+    </svg>
+    </button>
+    <ul id="menu" class="hidden md:flex space-x-6 text-sm font-medium">
+    <li><a href="../index.html" class="hover:underline">Inicio</a></li>
+    <li><a href="historia.html" class="hover:underline">Historia y Cultura</a></li>
+    <li><a href="atracciones.html" class="hover:underline">Atracciones</a></li>
+    <li><a href="gastronomia.html" class="hover:underline">Gastronomía</a></li>
+    <li><a href="como-llegar.html" class="hover:underline">Cómo Llegar</a></li>
+    </ul>
+</nav>
+<div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-primary text-sm font-medium">
+    <a href="../index.html" class="block py-2 hover:underline">Inicio</a>
+    <a href="historia.html" class="block py-2 hover:underline">Historia y Cultura</a>
+    <a href="atracciones.html" class="block py-2 hover:underline">Atracciones</a>
+    <a href="gastronomia.html" class="block py-2 hover:underline">Gastronomía</a>
+    <a href="como-llegar.html" class="block py-2 hover:underline">Cómo Llegar</a>
+</div>
+</header>
+
+<!-- Encabezado -->
+<section class="bg-primary text-white py-6 text-center pt-24">
+<h1 class="text-4xl font-extrabold">Gastronomía Catalana</h1>
+<p class="text-lg mt-2 italic">Descubre los sabores más auténticos de Barcelona</p>
+</section>
+
+<!-- Galería de Gastronomía -->
+<section class="max-w-7xl mx-auto py-16 px-6">
+<h2 class="text-3xl font-bold text-primary mb-8 text-center">Platillos Típicos</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!--Los platillos-->
+    <div onclick="openModal('modal-paella')" class="cursor-pointer hover:scale-105">
+    <img src="../assets/images/gastronomia/paella.jpg" alt="Paella" class="rounded-lg shadow-md object-cover h-64 w-full">
+    </div>
+
+    <!--Los platillos-->
+    <div onclick="openModal('modal-paella')" class="cursor-pointer hover:scale-105">
+    <img src="../assets/images/gastronomia/paella.jpg" alt="Paella" class="rounded-lg shadow-md object-cover h-64 w-full">
+    </div>
+
+    <!--Los platillos-->
+    <div onclick="openModal('modal-paella')" class="cursor-pointer hover:scale-105">
+    <img src="../assets/images/gastronomia/paella.jpg" alt="Paella" class="rounded-lg shadow-md object-cover h-64 w-full">
+    </div>
+
+    <!--Los platillos-->
+    <div onclick="openModal('modal-paella')" class="cursor-pointer hover:scale-105">
+    <img src="../assets/images/gastronomia/paella.jpg" alt="Paella" class="rounded-lg shadow-md object-cover h-64 w-full">
+    </div>
+
+    <!--Los platillos-->
+    <div onclick="openModal('modal-paella')" class="cursor-pointer hover:scale-105">
+    <img src="../assets/images/gastronomia/paella.jpg" alt="Paella" class="rounded-lg shadow-md object-cover h-64 w-full">
+    </div>
+
+    <!--Los platillos-->
+    <div onclick="openModal('modal-paella')" class="cursor-pointer hover:scale-105">
+    <img src="../assets/images/gastronomia/paella.jpg" alt="Paella" class="rounded-lg shadow-md object-cover h-64 w-full">
+    </div>
+    
+</div>
+</section>
+
+<!-- Galería de Restaurantes -->
+<section class="max-w-7xl mx-auto pb-16 px-6">
+<h2 class="text-3xl font-bold text-primary mb-8 text-center">Restaurantes Destacados</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Restaurantes -->
+    <div onclick="openModal('modal-can-culleretes')" class="cursor-pointer hover:scale-105">
+    <img src="../assets/images/gastronomia/can-culleretes.jpg" alt="Can Culleretes" class="rounded-lg shadow-md object-cover h-64 w-full">
+    </div>
+    <!-- Restaurantes -->
+    <div onclick="openModal('modal-can-culleretes')" class="cursor-pointer hover:scale-105">
+    <img src="../assets/images/gastronomia/can-culleretes.jpg" alt="Can Culleretes" class="rounded-lg shadow-md object-cover h-64 w-full">
+    </div>
+
+    <div onclick="openModal('modal-can-culleretes')" class="cursor-pointer hover:scale-105">
+    <img src="../assets/images/gastronomia/can-culleretes.jpg" alt="Can Culleretes" class="rounded-lg shadow-md object-cover h-64 w-full">
+    </div>
+
+    <div onclick="openModal('modal-can-culleretes')" class="cursor-pointer hover:scale-105">
+    <img src="../assets/images/gastronomia/can-culleretes.jpg" alt="Can Culleretes" class="rounded-lg shadow-md object-cover h-64 w-full">
+    </div>
+
+    <div onclick="openModal('modal-can-culleretes')" class="cursor-pointer hover:scale-105">
+    <img src="../assets/images/gastronomia/can-culleretes.jpg" alt="Can Culleretes" class="rounded-lg shadow-md object-cover h-64 w-full">
+    </div>
+
+    <div onclick="openModal('modal-can-culleretes')" class="cursor-pointer hover:scale-105">
+    <img src="../assets/images/gastronomia/can-culleretes.jpg" alt="Can Culleretes" class="rounded-lg shadow-md object-cover h-64 w-full">
+    </div>
+    
+</div>
+</section>
+
+<!-- Modal: Paella (Platillo) -->
+<div id="modal-paella" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+<div class="bg-white rounded-lg max-w-xl p-6 relative">
+    <button onclick="closeModal('modal-paella')" class="absolute top-2 right-4 text-2xl text-gray-600">&times;</button>
+    <h3 class="text-xl font-bold text-primary mb-2">Paella</h3>
+    <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in odio nec nisl ultricies fermentum.</p>
+    <ul class="list-disc pl-6 text-sm">
+    <li>Alérgenos: mariscos</li>
+    <li>Contiene: pescado, arroz, azafrán</li>
+    </ul>
+</div>
+</div>
+
+<!-- Modal: Can Culleretes (Restaurante) -->
+<div id="modal-can-culleretes" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+<div class="bg-white rounded-lg max-w-xl p-6 relative">
+    <button onclick="closeModal('modal-can-culleretes')" class="absolute top-2 right-4 text-2xl text-gray-600">&times;</button>
+    <h3 class="text-xl font-bold text-primary mb-2">Can Culleretes</h3>
+    <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p class="text-sm"><strong>Horario:</strong> Lunes a sábado, 13:00–22:30</p>
+    <p class="text-sm"><strong>Teléfono:</strong> +34 933 17 30 22</p>
+    <a href="https://canculleretes.com" target="_blank" class="text-amarillo underline hover:text-grana text-sm">
+    Sitio oficial
+    </a>
+    <img src="../a  ssets/images/gastronomia/can-culleretes-in.jpg" alt="Interior Can Culleretes" class="mt-4 rounded-lg shadow-md">
+</div>
+</div>
+
+
+<!-- Footer -->
+<footer class="bg-primary text-white text-center py-4 mt-10">
+<p>&copy; 2025 Roosevelt Pérez - Barcelona</p>
+</footer>
+
+
+</body>
+<script src="../js/index.js"></script>
+
+<script>
+function openModal(id) {
+    document.getElementById(id).classList.remove("hidden");
+    document.getElementById(id).classList.add("flex");
+}
+
+function closeModal(id) {
+    document.getElementById(id).classList.add("hidden");
+    document.getElementById(id).classList.remove("flex");
+}
+</script>
+
+</html>

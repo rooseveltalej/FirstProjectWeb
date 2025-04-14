@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Descubre Barcelona</title>
+  <link rel="icon" href="public/Escudo_de_Barcelona.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="css/index.css" /> <!-- Fuente Montserrat -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <script>
+    // Configuración de Tailwind CSS
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#004D98',
+              grana: '#A50044',
+              amarillo: '#FDB913',
+            },
+            fontFamily: {
+              sans: ['Montserrat', 'sans-serif'],
+              title: ['Bebas Neue', 'cursive'],
+            }
+          }
+        }
+  }
+
+  </script>  
+</head>
+
+<style>
+  .fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+</style>
+
+
+<body class="bg-gray-100 text-gray-800 font-sans"> <!-- Fondo gris claro, texto gris oscuro, fuente sans-->
+<!-- Navbar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-primary text-white shadow-md">   <!-- Navbar fijo en la parte superior, con ancho completo, fondo azul y sombra -->
+  <nav class="container mx-auto px-4 py-4 flex items-center justify-between">     <!-- Contenedor centrado, padding, y flexbox horizontal para logo y menú -->
+    <a href="index.html" class="text-2xl font-bold tracking-wide">Barcelona</a> 
+    
+
+    <!-- Burger Button -->
+    <button id="menu-toggle" class="md:hidden focus:outline-none">                <!-- Ícono hamburguesa para móviles -->
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"     
+          viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">     <!-- Oculto en pantallas medianas en adelante -->
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+    <!-- Menu Items -->
+    <ul id="menu" class="hidden md:flex space-x-6 text-sm font-medium">           <!-- Menú visible en pantallas medianas en adelante -->
+                                                                                  <!-- Oculto por defecto, se muestra como flex a partir de "md" (768px) -->
+                                                                                  <!-- Espaciado horizontal entre ítems -->
+      <li><a href="index.html" class="hover:text-amarillo">Inicio</a></li>
+      <li><a href="html/historia.html" class="hover:text-amarillo">Historia y Cultura</a></li>
+      <li><a href="html/atracciones.html" class="hover:text-amarillo">Atracciones</a></li>
+      <li><a href="html/gastronomia.html" class="hover:text-amarillo">Gastronomía</a></li>
+      <li><a href="html/como-llegar.html" class="hover:text-amarillo">Cómo Llegar</a></li>
+    </ul>
+
+
+    
+  </nav>
+
+  <!-- Mobile Menu (Este solo se muestra si se hace click en el icono de hamburguesa) -->
+  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-primary text-sm font-medium">    <!-- Oculto en pantallas medianas o mayores -->
+    <a href="index.html" class="block py-2 hover:text-amarillo">Inicio</a>
+    <a href="html/historia.html" class="block py-2 hover:text-amarillo">Historia y Cultura</a>
+    <a href="html/atracciones.html" class="block py-2 hover:text-amarillo">Atracciones</a>
+    <a href="html/gastronomia.html" class="block py-2 hover:text-amarillo">Gastronomía</a>
+    <a href="html/como-llegar.html" class="block py-2 hover:text-amarillo">Cómo Llegar</a>
+  </div>
+</header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-24 h-screen bg-cover bg-center flex items-center justify-center dark:text-white"
+  style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./assets/images/index/barcelona_hero_image_2.jpg');">
+
+  
+
+  <div class="container mx-auto px-6 text-center text-white max-w-4xl">
+    <h1 class="text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] font-title leading-[1.1] tracking-tight mb-6 drop-shadow-2xl animate-[fadeInUp_1s_ease-out_forwards]">
+      Barcelona
+    </h1>
+    
+    <p class="text-lg md:text-xl lg:text-2xl text-white/80 mb-8 max-w-2xl mx-auto opacity-0 animate-[fadeInUp_1s_ease-out_forwards]">
+      Donde la historia se encuentra con el mar Mediterráneo y la arquitectura cuenta su propia historia.
+    </p>
+    
+    <a href="html/historia.html" class="inline-flex items-center justify-center bg-grana text-amarillo font-semibold px-6 py-3 rounded-full shadow-md hover:bg-gray-100 transition duration-300">
+      Descubre más
+    </a>
+
+
+
+
+  </div>
+  </section>
+
+  <!-- Introducción -->
+  <section data-aos="fade-right" data-aos-duration="800"  class="py-12 px-6 text-center pb-6">
+    <h2 class="text-3xl font-semibold mb-4">Bienvenidos a Barcelona</h2>
+    <p class="text-lg max-w-2xl mx-auto">
+      Descubre la vibrante capital catalana, cuna del modernismo y una joya mediterránea.
+      Sumérgete en su cultura, arquitectura y sabores únicos.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center py-4">
+    <p>&copy; 2025 Roosevelt Pérez - Barcelona</p>
+  </footer>
+
+</body>
+
+  <script src="js/index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>

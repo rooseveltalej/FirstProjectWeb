@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Atracciones Turísticas - Barcelona</title>
+<link rel="icon" href="../public/Escudo_de_Barcelona.svg" type="image/x-icon" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+    colors: {
+    primary: '#004D98',
+    grana: '#A50044',
+    amarillo: '#FDB913',
+    }
+}
+}
+}
+</script>
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+<!-- Navbar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-primary text-white shadow-md">
+<nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="../index.html" class="text-2xl font-bold tracking-wide">Barcelona</a>
+    <button id="menu-toggle" class="md:hidden focus:outline-none">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+    </svg>
+    </button>
+    <ul id="menu" class="hidden md:flex space-x-6 text-sm font-medium">
+    <li><a href="../index.html" class="hover:underline">Inicio</a></li>
+    <li><a href="historia.html" class="hover:underline">Historia y Cultura</a></li>
+    <li><a href="atracciones.html" class="hover:underline">Atracciones</a></li>
+    <li><a href="gastronomia.html" class="hover:underline">Gastronomía</a></li>
+    <li><a href="como-llegar.html" class="hover:underline">Cómo Llegar</a></li>
+    </ul>
+</nav>
+<div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-primary text-sm font-medium">
+    <a href="../index.html" class="block py-2 hover:underline">Inicio</a>
+    <a href="historia.html" class="block py-2 hover:underline">Historia y Cultura</a>
+    <a href="atracciones.html" class="block py-2 hover:underline">Atracciones</a>
+    <a href="gastronomia.html" class="block py-2 hover:underline">Gastronomía</a>
+    <a href="como-llegar.html" class="block py-2 hover:underline">Cómo Llegar</a>
+</div>
+</header>
+
+<!-- Encabezado -->
+<section class="bg-primary text-white py-6 text-center pt-24">
+<h1 class="text-4xl font-extrabold">Atracciones Turísticas</h1>
+<p class="text-lg mt-2 italic">Descubre los lugares más emblemáticos de Barcelona</p>
+</section>
+
+<!-- 1. Atracción Turística -->
+<section data-aos="fade-left" data-aos-duration="1200" class="max-w-6xl mx-auto py-12 px-6">
+<div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row gap-6">
+    <img src="../assets/images/atracciones/sagrada-familia.jpg" alt="Sagrada Família" class="md:w-1/2 w-full object-cover h-80 md:h-auto">
+    <div class="p-6 flex flex-col justify-between">
+    <div>
+        <h2 class="text-2xl font-bold text-primary mb-2">Sagrada Família</h2>
+        <p class="mb-3">
+        Obra maestra de Antoni Gaudí y símbolo icónico del modernismo catalán. Un templo inacabado que maravilla a cada visitante.
+        </p>
+        <p class="text-sm mb-1"><strong>Horario:</strong> Lunes a domingo, 9:00 a 18:00</p>
+        <p class="text-sm mb-2"><strong>Entrada:</strong> General: 26€ · Estudiantes: 24€ · Menores de 11 años: Gratis</p>
+        <a href="https://sagradafamilia.org/es/home" target="_blank" class="text-amarillo underline hover:text-grana text-sm">
+        Sitio oficial
+        </a>
+    </div>
+    </div>
+</div>
+</section>
+
+
+
+<!-- Otras atracciones turisticas, hace falta editar -->
+<!-- 2. Atracción Turística -->
+<section data-aos="fade-right" data-aos-duration="1200" class="max-w-6xl mx-auto py-12 px-6">
+<div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row-reverse gap-6">
+    <img src="../assets/images/atracciones/casa-batllo.jpg" alt="Casa Batlló" class="md:w-1/2 w-full object-cover h-80 md:h-auto">
+    <div class="p-6 flex flex-col justify-between">
+    <div>
+        <h2 class="text-2xl font-bold text-primary mb-2">Casa Batlló</h2>
+        <p class="mb-3">
+        Una de las obras más creativas de Gaudí, destaca por su fachada ondulante y su interior surrealista lleno de colores y formas inspiradas en la naturaleza.
+        </p>
+        <p class="text-sm mb-1"><strong>Horario:</strong> Todos los días, 9:00 a 20:00</p>
+        <p class="text-sm mb-2"><strong>Entrada:</strong> General: 29€ · Niños: 9€</p>
+        <a href="https://www.casabatllo.es/" target="_blank" class="text-amarillo underline hover:text-grana text-sm">
+        Sitio oficial
+        </a>
+    </div>
+    </div>
+</div>
+</section>
+
+<!-- 3. Atracción Turística -->
+<section data-aos="fade-left" data-aos-duration="1200" class="max-w-6xl mx-auto py-12 px-6">
+    <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row gap-6">
+        <img src="../assets/images/atracciones/sagrada-familia.jpg" alt="Sagrada Família" class="md:w-1/2 w-full object-cover h-80 md:h-auto">
+        <div class="p-6 flex flex-col justify-between">
+        <div>
+            <h2 class="text-2xl font-bold text-primary mb-2">Sagrada Família</h2>
+            <p class="mb-3">
+            Obra maestra de Antoni Gaudí y símbolo icónico del modernismo catalán. Un templo inacabado que maravilla a cada visitante.
+            </p>
+            <p class="text-sm mb-1"><strong>Horario:</strong> Lunes a domingo, 9:00 a 18:00</p>
+            <p class="text-sm mb-2"><strong>Entrada:</strong> General: 26€ · Estudiantes: 24€ · Menores de 11 años: Gratis</p>
+            <a href="https://sagradafamilia.org/es/home" target="_blank" class="text-amarillo underline hover:text-grana text-sm">
+            Sitio oficial
+            </a>
+        </div>
+        </div>
+    </div>
+    </section>
+    
+    
+    
+    <!-- 4. Atracción Turística -->
+    <section data-aos="fade-right" data-aos-duration="1200" class="max-w-6xl mx-auto py-12 px-6">
+    <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row-reverse gap-6">
+        <img src="../assets/images/atracciones/casa-batllo.jpg" alt="Casa Batlló" class="md:w-1/2 w-full object-cover h-80 md:h-auto">
+        <div class="p-6 flex flex-col justify-between">
+        <div>
+            <h2 class="text-2xl font-bold text-primary mb-2">Casa Batlló</h2>
+            <p class="mb-3">
+            Una de las obras más creativas de Gaudí, destaca por su fachada ondulante y su interior surrealista lleno de colores y formas inspiradas en la naturaleza.
+            </p>
+            <p class="text-sm mb-1"><strong>Horario:</strong> Todos los días, 9:00 a 20:00</p>
+            <p class="text-sm mb-2"><strong>Entrada:</strong> General: 29€ · Niños: 9€</p>
+            <a href="https://www.casabatllo.es/" target="_blank" class="text-amarillo underline hover:text-grana text-sm">
+            Sitio oficial
+            </a>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- 5. Atracción Turística -->
+<section data-aos="fade-left" data-aos-duration="1200" class="max-w-6xl mx-auto py-12 px-6">
+    <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row gap-6">
+        <img src="../assets/images/atracciones/sagrada-familia.jpg" alt="Sagrada Família" class="md:w-1/2 w-full object-cover h-80 md:h-auto">
+        <div class="p-6 flex flex-col justify-between">
+        <div>
+            <h2 class="text-2xl font-bold text-primary mb-2">Sagrada Família</h2>
+            <p class="mb-3">
+            Obra maestra de Antoni Gaudí y símbolo icónico del modernismo catalán. Un templo inacabado que maravilla a cada visitante.
+            </p>
+            <p class="text-sm mb-1"><strong>Horario:</strong> Lunes a domingo, 9:00 a 18:00</p>
+            <p class="text-sm mb-2"><strong>Entrada:</strong> General: 26€ · Estudiantes: 24€ · Menores de 11 años: Gratis</p>
+            <a href="https://sagradafamilia.org/es/home" target="_blank" class="text-amarillo underline hover:text-grana text-sm">
+            Sitio oficial
+            </a>
+        </div>
+        </div>
+    </div>
+    </section>
+    
+    
+    
+
+    <!-- 6. Atracción Turística -->
+    <section data-aos="fade-right" data-aos-duration="1200" class="max-w-6xl mx-auto py-12 px-6">
+    <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row-reverse gap-6">
+        <img src="../assets/images/atracciones/casa-batllo.jpg" alt="Casa Batlló" class="md:w-1/2 w-full object-cover h-80 md:h-auto">
+        <div class="p-6 flex flex-col justify-between">
+        <div>
+            <h2 class="text-2xl font-bold text-primary mb-2">Casa Batlló</h2>
+            <p class="mb-3">
+            Una de las obras más creativas de Gaudí, destaca por su fachada ondulante y su interior surrealista lleno de colores y formas inspiradas en la naturaleza.
+            </p>
+            <p class="text-sm mb-1"><strong>Horario:</strong> Todos los días, 9:00 a 20:00</p>
+            <p class="text-sm mb-2"><strong>Entrada:</strong> General: 29€ · Niños: 9€</p>
+            <a href="https://www.casabatllo.es/" target="_blank" class="text-amarillo underline hover:text-grana text-sm">
+            Sitio oficial
+            </a>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- 7. Atracción Turística -->
+<section data-aos="fade-left" data-aos-duration="1200" class="max-w-6xl mx-auto py-12 px-6">
+    <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row gap-6">
+        <img src="../assets/images/atracciones/sagrada-familia.jpg" alt="Sagrada Família" class="md:w-1/2 w-full object-cover h-80 md:h-auto">
+        <div class="p-6 flex flex-col justify-between">
+        <div>
+            <h2 class="text-2xl font-bold text-primary mb-2">Sagrada Família</h2>
+            <p class="mb-3">
+            Obra maestra de Antoni Gaudí y símbolo icónico del modernismo catalán. Un templo inacabado que maravilla a cada visitante.
+            </p>
+            <p class="text-sm mb-1"><strong>Horario:</strong> Lunes a domingo, 9:00 a 18:00</p>
+            <p class="text-sm mb-2"><strong>Entrada:</strong> General: 26€ · Estudiantes: 24€ · Menores de 11 años: Gratis</p>
+            <a href="https://sagradafamilia.org/es/home" target="_blank" class="text-amarillo underline hover:text-grana text-sm">
+            Sitio oficial
+            </a>
+        </div>
+        </div>
+    </div>
+    </section>
+    
+    
+    
+    <!-- 8. Atracción Turística -->
+    <section data-aos="fade-right" data-aos-duration="1200" class="max-w-6xl mx-auto py-12 px-6">
+    <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row-reverse gap-6">
+        <img src="../assets/images/atracciones/casa-batllo.jpg" alt="Casa Batlló" class="md:w-1/2 w-full object-cover h-80 md:h-auto">
+        <div class="p-6 flex flex-col justify-between">
+        <div>
+            <h2 class="text-2xl font-bold text-primary mb-2">Casa Batlló</h2>
+            <p class="mb-3">
+            Una de las obras más creativas de Gaudí, destaca por su fachada ondulante y su interior surrealista lleno de colores y formas inspiradas en la naturaleza.
+            </p>
+            <p class="text-sm mb-1"><strong>Horario:</strong> Todos los días, 9:00 a 20:00</p>
+            <p class="text-sm mb-2"><strong>Entrada:</strong> General: 29€ · Niños: 9€</p>
+            <a href="https://www.casabatllo.es/" target="_blank" class="text-amarillo underline hover:text-grana text-sm">
+            Sitio oficial
+            </a>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- 9. Atracción Turística -->
+<section data-aos="fade-left" data-aos-duration="1200" class="max-w-6xl mx-auto py-12 px-6">
+    <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row gap-6">
+        <img src="../assets/images/atracciones/sagrada-familia.jpg" alt="Sagrada Família" class="md:w-1/2 w-full object-cover h-80 md:h-auto">
+        <div class="p-6 flex flex-col justify-between">
+        <div>
+            <h2 class="text-2xl font-bold text-primary mb-2">Sagrada Família</h2>
+            <p class="mb-3">
+            Obra maestra de Antoni Gaudí y símbolo icónico del modernismo catalán. Un templo inacabado que maravilla a cada visitante.
+            </p>
+            <p class="text-sm mb-1"><strong>Horario:</strong> Lunes a domingo, 9:00 a 18:00</p>
+            <p class="text-sm mb-2"><strong>Entrada:</strong> General: 26€ · Estudiantes: 24€ · Menores de 11 años: Gratis</p>
+            <a href="https://sagradafamilia.org/es/home" target="_blank" class="text-amarillo underline hover:text-grana text-sm">
+            Sitio oficial
+            </a>
+        </div>
+        </div>
+    </div>
+    </section>
+    
+    
+    
+    <!-- 10. Atracción Turística -->
+    <section data-aos="fade-right" data-aos-duration="1200" class="max-w-6xl mx-auto py-12 px-6">
+    <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row-reverse gap-6">
+        <img src="../assets/images/atracciones/casa-batllo.jpg" alt="Casa Batlló" class="md:w-1/2 w-full object-cover h-80 md:h-auto">
+        <div class="p-6 flex flex-col justify-between">
+        <div>
+            <h2 class="text-2xl font-bold text-primary mb-2">Casa Batlló</h2>
+            <p class="mb-3">
+            Una de las obras más creativas de Gaudí, destaca por su fachada ondulante y su interior surrealista lleno de colores y formas inspiradas en la naturaleza.
+            </p>
+            <p class="text-sm mb-1"><strong>Horario:</strong> Todos los días, 9:00 a 20:00</p>
+            <p class="text-sm mb-2"><strong>Entrada:</strong> General: 29€ · Niños: 9€</p>
+            <a href="https://www.casabatllo.es/" target="_blank" class="text-amarillo underline hover:text-grana text-sm">
+            Sitio oficial
+            </a>
+        </div>
+        </div>
+    </div>
+    </section>
+
+
+
+<!-- Mapa Interactivo -->
+<section class="max-w-6xl mx-auto px-6 pb-16">
+<h2 class="text-2xl font-bold text-center mb-4">Ubicación en el Mapa</h2>
+<div class="aspect-video">
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.1526078978634!2d2.173403676464022!3d41.40363057129495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f6f75a6d17%3A0x4d6b4a2a4bdf7806!2sLa%20Sagrada%20Fam%C3%ADlia!5e0!3m2!1ses!2scr!4v1711752400000" 
+    width="100%" height="450" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    class="w-full h-full rounded-lg shadow-md">
+    </iframe>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-primary text-white text-center py-4 mt-10">
+<p>&copy; 2025 Roosevelt Pérez - Barcelona</p>
+</footer>
+
+</body>
+<script src="../js/index.js"></script>
+<script src="js/index.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+</html>
