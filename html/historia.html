@@ -197,29 +197,109 @@ tailwind.config = {
             </div>
         </div>
 
+        <div onclick="openModal('modal-carnaval')" class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="../assets/images/historia/carnaval-barcelona.jpg" alt="Carnaval de Barcelona" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-bold text-primary">Carnaval de Barcelona</h3>
+                <p class="text-sm mt-2">El Carnaval de Barcelona es una fiesta llena de color, disfraces y alegría que se celebra en febrero, 
+                    justo antes del inicio de la Cuaresma</p>
+            </div>
+        </div>
+
+        <div onclick="openModal('modal-festa-major')" class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="../assets/images/historia/festa-Sants.jpg" alt="Festa Major de Sants" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-bold text-primary">Festa Major de Sants</h3>
+                <p class="text-sm mt-2">Otra fiesta de barrio importante en Barcelona es la Festa Major de Sants, que se celebra en agosto en el barrio de Sants.</p>
+            </div>
+        </div>
+
+        <div onclick="openModal('modal-cavalcada')" class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="../assets/images/historia/cavalcada-de-reis.jpg" alt="Cavalcada de Reis" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-bold text-primary">Cavalcada de Reis</h3>
+                <p class="text-sm mt-2">La Cavalcada de Reis es la cabalgata de los Reyes Magos que se celebra la noche del 5 de enero y 
+                    marca el inicio de la Epifanía.
+                </p>
+            </div>
+        </div>
+
+        <div onclick="openModal('modal-medir')" class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="../assets/images/historia/sant-medir.jpg" alt="Sant Medir" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-bold text-primary">Sant Medir</h3>
+                <p class="text-sm mt-2">La Festa de Sant Medir, celebrada el 3 de marzo, es una de las festividades más curiosas de Barcelona, 
+                    especialmente en los barrios de Gràcia, Sant Gervasi y Sarrià
+                </p>
+            </div>
+
+        </div>
+
                 <!-- Modal: Sant Jordi -->
         <div id="modal-santjordi" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
             <div class="bg-white rounded-lg max-w-lg p-6 relative">
-            <button onclick="closeModal('modal-santjordi')" class="absolute top-2 right-4 text-xl font-bold text-gray-600">&times;</button>
-            <h3 class="text-2xl font-bold text-primary mb-4">Sant Jordi</h3>
-            <p class="text-gray-700">
-                El 23 de abril, Sant Jordi convierte las calles de Barcelona en un festival de amor y literatura. Las personas se regalan libros y rosas, y las librerías y floristas llenan las plazas.
-            </p>
+                <button onclick="closeModal('modal-santjordi')" class="absolute top-2 right-4 text-xl font-bold text-gray-600">&times;</button>
+                <h3 class="text-2xl font-bold text-primary mb-4">Sant Jordi</h3>
+                <p class="text-gray-700">
+                    El 23 de abril, Sant Jordi convierte las calles de Barcelona en un festival de amor y literatura. Las personas se regalan libros y rosas, y las librerías y floristas llenan las plazas.
+                </p>
             </div>
         </div>
         
         <!-- Modal: Festa Major de Gràcia -->
         <div id="modal-gracia" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
             <div class="bg-white rounded-lg max-w-lg p-6 relative">
-            <button onclick="closeModal('modal-gracia')" class="absolute top-2 right-4 text-xl font-bold text-gray-600">&times;</button>
-            <h3 class="text-2xl font-bold text-primary mb-4">Festa Major de Gràcia</h3>
-            <p class="text-gray-700">
-                Celebrada en agosto, esta fiesta transforma las calles del barrio de Gràcia con decoraciones creativas, conciertos y actividades culturales para todas las edades.
-            </p>
+                <button onclick="closeModal('modal-gracia')" class="absolute top-2 right-4 text-xl font-bold text-gray-600">&times;</button>
+                <h3 class="text-2xl font-bold text-primary mb-4">Festa Major de Gràcia</h3>
+                <p class="text-gray-700">
+                    Celebrada en agosto, esta fiesta transforma las calles del barrio de Gràcia con decoraciones creativas, conciertos y actividades culturales para todas las edades.
+                </p>
             </div>
         </div>
 
+        <div id="modal-carnaval" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+            <div class="bg-white rounded-lg max-w-lg p-6 relative">
+                <button onclick="closeModal('modal-carnaval')" class="absolute top-2 right-4 text-xl font-bold text-gray-600">&times;</button>
+                <h3 class="text-2xl font-bold text-primary mb-4">Carnaval de Barcelona</h3>
+                <p class="text-gray-700">
+                    Aunque Barcelona no es tan conocida por su carnaval como otras ciudades españolas, la fiesta ha recuperado popularidad en los últimos años y es especialmente vibrante en barrios como Gràcia y El Raval.
+                </p>
+            </div>
+        </div>
 
+        <div id="modal-festa-major" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+            <div class="bg-white rounded-lg max-w-lg p-6 relative">
+                <button onclick="closeModal('modal-festa-major')" class="absolute top-2 right-4 text-xl font-bold text-gray-600">&times;</button>
+                <h3 class="text-2xl font-bold text-primary mb-4">Festa Major de Sants</h3>
+                <p class="text-gray-700">
+                    Al igual que en Gràcia, los vecinos decoran las calles y participan en numerosas actividades culturales y festivas. La fiesta incluye 
+                    conciertos, correfocs, castellers, exposiciones y competiciones deportivas.
+                </p>
+            </div>
+        </div>
+
+        <div id="modal-cavalcada" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+            <div class="bg-white rounded-lg max-w-lg p-6 relative">
+                <button onclick="closeModal('modal-cavalcada')" class="absolute top-2 right-4 text-xl font-bold text-gray-600">&times;</button>
+                <h3 class="text-2xl font-bold text-primary mb-4">Cavalcada de Reis</h3>
+                <p class="text-gray-700">
+                    La cabalgata comienza en el Puerto de Barcelona, donde los Reyes llegan en barco, y recorre las principales calles del centro de la ciudad, 
+                    como la Vía Laietana y el Paseo de Gracia. Es una noche mágica que culmina con la entrega de regalos el 6 de enero, día de Reyes, 
+                    en las casas de toda Barcelona.
+            </div>
+        </div>
+
+            <div id="modal-medir" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+                <div class="bg-white rounded-lg max-w-lg p-6 relative">
+                    <button onclick="closeModal('modal-medir')" class="absolute top-2 right-4 text-xl font-bold text-gray-600">&times;</button>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Sant Medir</h3>
+                    <p class="text-gray-700">
+                    Esta fiesta popular, conocida como la "dulce romería", se caracteriza por la gran cantidad de caramelos que se 
+                    lanzan desde las carrozas durante el desfile en honor a Sant Medir.
+                    </p>
+                </div>
+            </div>
+        
         
 
     </div>
