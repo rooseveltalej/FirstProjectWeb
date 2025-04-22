@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Atracciones Turísticas - Barcelona</title>
     <link rel="icon" href="../public/Escudo_de_Barcelona.svg" type="image/x-icon" />
+    <title>Atracciones Turísticas - Barcelona</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script>
@@ -21,6 +21,13 @@
             }
         }
     </script>
+
+<style>
+    html, body { /* Esto es para que el AOS no genere un desbordamiento visual*/
+    overflow-x: hidden;
+    }
+</style>
+
 </head>
 
 <body class="bg-gray-100 text-gray-800 font-sans">
@@ -53,7 +60,7 @@
     </header>
 
     <!-- Encabezado -->
-    <section class="bg-primary text-white py-6 text-center pt-24">
+    <section class="bg-primary text-white py-6 text-center pt-20">
         <h1 class="text-4xl font-extrabold">Atracciones Turísticas</h1>
         <p class="text-lg mt-2 italic">Descubre los lugares más emblemáticos de Barcelona</p>
     </section>
@@ -290,7 +297,6 @@
 
 </body>
 <script src="../js/index.js"></script>
-<script src="js/index.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();

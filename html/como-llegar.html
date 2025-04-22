@@ -25,29 +25,29 @@ tailwind.config = {
 
 <!-- Navbar -->
 <header class="fixed top-0 left-0 w-full z-50 bg-primary text-white shadow-md">
-<nav class="container mx-auto px-4 py-4 flex items-center justify-between">
-    <a href="../index.html" class="text-2xl font-bold tracking-wide">Barcelona</a>
-    <button id="menu-toggle" class="md:hidden focus:outline-none">
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-        viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M4 6h16M4 12h16M4 18h16"/>
-    </svg>
-    </button>
-    <ul id="menu" class="hidden md:flex space-x-6 text-sm font-medium">
-    <li><a href="../index.html" class="hover:text-amarillo">Inicio</a></li>
-    <li><a href="historia.html" class="hover:text-amarillo">Historia y Cultura</a></li>
-    <li><a href="atracciones.html" class="hover:text-amarillo">Atracciones</a></li>
-    <li><a href="gastronomia.html" class="hover:text-amarillo">Gastronomía</a></li>
-    <li><a href="como-llegar.html" class="hover:text-amarillo">Cómo Llegar</a></li>
-    </ul>
-</nav>
-<div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-primary text-sm font-medium">
-    <a href="../index.html" class="block py-2 hover:text-amarillo">Inicio</a>
-    <a href="historia.html" class="block py-2 hover:text-amarillo">Historia y Cultura</a>
-    <a href="atracciones.html" class="block py-2 hover:text-amarillo">Atracciones</a>
-    <a href="gastronomia.html" class="block py-2 hover:text-amarillo">Gastronomía</a>
-    <a href="como-llegar.html" class="block py-2 hover:text-amarillo">Cómo Llegar</a>
-</div>
+    <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="../index.html" class="text-2xl font-bold tracking-wide">Barcelona</a>
+        <button id="menu-toggle" class="md:hidden focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+        <ul id="menu" class="hidden md:flex space-x-6 text-sm font-medium">
+            <li><a href="../index.html" class="hover:text-amarillo">Inicio</a></li>
+            <li><a href="historia.html" class="hover:text-amarillo">Historia y Cultura</a></li>
+            <li><a href="atracciones.html" class="hover:text-amarillo">Atracciones</a></li>
+            <li><a href="gastronomia.html" class="hover:text-amarillo">Gastronomía</a></li>
+            <li><a href="como-llegar.html" class="hover:text-amarillo">Cómo Llegar</a></li>
+        </ul>
+    </nav>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-primary text-sm font-medium">
+        <a href="../index.html" class="block py-2 hover:text-amarillo">Inicio</a>
+        <a href="historia.html" class="block py-2 hover:text-amarillo">Historia y Cultura</a>
+        <a href="atracciones.html" class="block py-2 hover:text-amarillo">Atracciones</a>
+        <a href="gastronomia.html" class="block py-2 hover:text-amarillo">Gastronomía</a>
+        <a href="como-llegar.html" class="block py-2 hover:text-amarillo">Cómo Llegar</a>
+    </div>
 </header>
 
 <!-- Encabezado -->
@@ -59,7 +59,7 @@ tailwind.config = {
 <!-- Aeropuerto El Prat -->
 <section class="max-w-6xl mx-auto py-12 px-6">
 <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row gap-6">
-    <img src="../assets/images/transporte/el-prat.jpg" alt="Aeropuerto El Prat" class="md:w-1/2 w-full object-cover h-80 md:h-auto">
+    <img src="../assets/images/como-llegar/el-prat.jpg" alt="Aeropuerto El Prat" class="md:w-1/2 w-full object-cover h-80 md:h-auto">
     <div class="p-6 flex flex-col justify-between">
     <div>
         <h2 class="text-2xl font-bold text-primary mb-2">Aeropuerto Internacional El Prat (BCN)</h2>
@@ -83,7 +83,7 @@ tailwind.config = {
 <!-- Estación de tren Sants -->
 <section class="max-w-6xl mx-auto py-12 px-6">
 <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row-reverse gap-6">
-    <img src="../assets/images/transporte/sants.jpg" alt="Estación Sants" class="md:w-1/2 w-full object-cover h-80 md:h-auto">
+    <img src="../assets/images/como-llegar/sants.jpg" alt="Estación Sants" class="md:w-1/2 w-full object-cover h-80 md:h-auto">
     <div class="p-6 flex flex-col justify-between">
     <div>
         <h2 class="text-2xl font-bold text-primary mb-2">Estación de Tren Barcelona Sants</h2>
@@ -96,7 +96,7 @@ tailwind.config = {
         <li>Restaurantes, taxis y metro</li>
         <li>Zona de espera con accesibilidad</li>
         </ul>
-        <a href="https://www.renfe.com" target="_blank" class="text-amarillo underline hover:text-grana text-sm">
+        <a href="https://www.adif.es/en/w/71801-barcelona-sants?pageFromPlid=335" target="_blank" class="text-amarillo underline hover:text-grana text-sm">
         Sitio oficial de Renfe
         </a>
     </div>
@@ -107,7 +107,7 @@ tailwind.config = {
 <!-- Estación de buses Estació del Nord -->
 <section class="max-w-6xl mx-auto py-12 px-6">
 <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row gap-6">
-    <img src="../assets/images/transporte/nord.jpg" alt="Estació del Nord" class="md:w-1/2 w-full object-cover h-80 md:h-auto">
+    <img src="../assets/images/como-llegar/nord.jpg" alt="Estació del Nord" class="md:w-1/2 w-full object-cover h-80 md:h-auto">
     <div class="p-6 flex flex-col justify-between">
     <div>
         <h2 class="text-2xl font-bold text-primary mb-2">Estación de Autobuses Barcelona Nord</h2>
@@ -121,7 +121,7 @@ tailwind.config = {
         <li>Guarda equipaje</li>
         <li>Conexión con metro L1 (Arc de Triomf)</li>
         </ul>
-        <a href="https://www.barcelonanord.com/" target="_blank" class="text-amarillo underline hover:text-grana text-sm">
+        <a href="https://barcelonanord.barcelona/es" target="_blank" class="text-amarillo underline hover:text-grana text-sm">
         Sitio oficial de Estació del Nord
         </a>
     </div>
